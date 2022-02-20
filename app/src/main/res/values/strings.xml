@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GoDev!</string>
+    <string name="email_input">Email</string>
+    <string name="senha_input">Senha</string>
+    <string name="entrar_btn">Entrar</string>
+    <string name="hint_help_btn">Precisa de ajuda?</string>
+    <string name="register_help_btn">Novo por aqui? Inscreva-se agora</string>
 </resources>
