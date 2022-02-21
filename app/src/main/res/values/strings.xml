@@ -6,4 +6,8 @@
     <string name="hint_help_btn">Precisa de ajuda?</string>
     <string name="register_help_btn">Novo por aqui? Inscreva-se agora</string>
     <string name="signin_txt">Registrar-se</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

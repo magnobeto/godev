@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121909653319",
+    "project_id": "godev-uerj",
+    "storage_bucket": "godev-uerj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121909653319:android:3d793eef61a5a922cc2662",
+        "android_client_info": {
+          "package_name": "com.uerj.godev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121909653319-j0ft2lertshs7dckmecav9160ne8uib0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhLP_l03-NVFlYXSnZygPBBmhpXh4QSkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121909653319-j0ft2lertshs7dckmecav9160ne8uib0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
