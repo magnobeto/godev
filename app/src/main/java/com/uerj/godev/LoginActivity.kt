@@ -23,12 +23,12 @@ class LoginActivity : AppCompatActivity() {
                 val bundle = bundleOf().apply {
                     emailInput.text.toString() to USER_NAME
                 }
-                navigateToMainAcitivity(bundle)
+                navigateToTrailActivity(bundle)
             }
         }
     }
-    private fun navigateToMainAcitivity(bundle: Bundle?) {
-        val intent = Intent(this, MainActivity::class.java)
+    private fun navigateToTrailActivity(bundle: Bundle?) {
+        val intent = Intent(this, TrailActivity::class.java)
         startActivity(intent, bundle)
         finish()
     }
