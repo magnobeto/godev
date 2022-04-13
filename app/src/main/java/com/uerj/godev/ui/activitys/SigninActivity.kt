@@ -1,7 +1,8 @@
-package com.uerj.godev
+package com.uerj.godev.ui.activitys
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.uerj.godev.R
 
 class SigninActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

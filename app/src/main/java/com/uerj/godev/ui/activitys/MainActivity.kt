@@ -1,4 +1,4 @@
-package com.uerj.godev
+package com.uerj.godev.ui.activitys
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

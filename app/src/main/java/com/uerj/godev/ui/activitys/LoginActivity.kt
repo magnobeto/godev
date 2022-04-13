@@ -1,10 +1,11 @@
-package com.uerj.godev
+package com.uerj.godev.ui.activitys
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
+import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {

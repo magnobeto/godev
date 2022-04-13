@@ -1,11 +1,15 @@
-package com.uerj.godev.ui
+package com.uerj.godev.ui.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.uerj.godev.databinding.ListItemBinding
+import com.uerj.godev.model.Language
 
-class ListTrailAdapter(private val list: List<String> ) : RecyclerView.Adapter<ListTrailAdapter.ListTrailViewHolder>() {
+class ListTrailAdapter(private val context: Context ,private val list: List<Language>) :
+    RecyclerView.Adapter<ListTrailAdapter.ListTrailViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListTrailViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -15,14 +19,19 @@ class ListTrailAdapter(private val list: List<String> ) : RecyclerView.Adapter<L
 
     override fun onBindViewHolder(holder: ListTrailViewHolder, position: Int) {
         val listItem = list[position]
-        holder.binding.nameItemTxt.text = listItem
+        holder.binding.apply {
+            cardItem.setBackgroundColor(ContextCompat.getColor(context, listItem.backGroundColor))
+            nameItemTxt.text = listItem.name
+            imageButton.setBackgroundResource(listItem.icon)
+        }
     }
 
     override fun getItemCount(): Int {
         return list.size
     }
 
-    inner class ListTrailViewHolder(val binding : ListItemBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class ListTrailViewHolder(val binding: ListItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
     }
 }
