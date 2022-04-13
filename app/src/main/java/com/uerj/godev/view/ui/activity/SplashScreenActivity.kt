@@ -1,4 +1,4 @@
-package com.uerj.godev.ui.view.activity
+package com.uerj.godev.view.ui.activity
 
 import android.content.Intent
 import android.os.Bundle

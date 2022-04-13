@@ -1,4 +1,4 @@
-package com.uerj.godev.ui.view.activity
+package com.uerj.godev.view.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityTrailBinding
 import com.uerj.godev.model.Language
-import com.uerj.godev.ui.adapter.ListTrailAdapter
+import com.uerj.godev.view.adapter.ListTrailAdapter
 
 class TrailActivity : AppCompatActivity() {
 

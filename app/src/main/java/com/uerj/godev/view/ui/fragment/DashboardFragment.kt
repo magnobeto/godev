@@ -1,4 +1,4 @@
-package com.uerj.godev.ui.view.fragment
+package com.uerj.godev.view.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
