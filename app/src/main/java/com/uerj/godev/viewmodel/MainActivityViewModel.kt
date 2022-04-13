@@ -9,4 +9,8 @@ class MainActivityViewModel : ViewModel() {
 
     private val languageSelectedLV: MutableLiveData<Language> = MutableLiveData()
     val languageSelected: LiveData<Language> = languageSelectedLV
+
+    fun setLanguageSelected(language: Language) {
+        languageSelectedLV.value = language
+    }
 }
