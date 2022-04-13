@@ -1,4 +1,4 @@
-package com.uerj.godev.ui.activitys
+package com.uerj.godev.ui.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

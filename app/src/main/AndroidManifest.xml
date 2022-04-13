@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoDev">
         <activity
-            android:name=".ui.activitys.MainActivity"
+            android:name="com.uerj.godev.ui.view.activity.MainActivity"
             android:exported="false"
             android:label="@string/app_name" />
         <activity
-            android:name=".ui.activitys.SplashScreenActivity"
+            android:name="com.uerj.godev.ui.view.activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +23,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activitys.LoginActivity"
+            android:name="com.uerj.godev.ui.view.activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activitys.SigninActivity"
+            android:name="com.uerj.godev.ui.view.activity.SigninActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activitys.TrailActivity"
+            android:name="com.uerj.godev.ui.view.activity.TrailActivity"
             android:exported="false" />
     </application>
 
