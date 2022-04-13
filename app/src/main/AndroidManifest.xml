@@ -12,7 +12,7 @@
         <activity
             android:name=".ui.activitys.MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_main" />
+            android:label="@string/app_name" />
         <activity
             android:name=".ui.activitys.SplashScreenActivity"
             android:exported="true">

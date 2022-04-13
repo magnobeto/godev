@@ -1,8 +1,10 @@
 package com.uerj.godev.ui.activitys
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityTrailBinding
@@ -26,7 +28,16 @@ class TrailActivity : AppCompatActivity() {
 
         binding.recyclerViewListTrail.apply {
             layoutManager = StaggeredGridLayoutManager(2, LinearLayout.VERTICAL)
-            adapter = ListTrailAdapter(this@TrailActivity, list)
+            adapter = ListTrailAdapter(this@TrailActivity, list) { selectItemLanguage ->
+                val params = bundleOf("Language_selected" to selectItemLanguage.name)
+                navigateToMainActivity(params)
+            }
         }
+    }
+
+    private fun navigateToMainActivity(params: Bundle) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent, params)
+        finish()
     }
 }
