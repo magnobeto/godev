@@ -10,6 +10,7 @@ import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityTrailBinding
 import com.uerj.godev.model.Language
 import com.uerj.godev.view.adapter.ListTrailAdapter
+import java.io.Serializable
 
 class TrailActivity : AppCompatActivity() {
 
@@ -29,15 +30,16 @@ class TrailActivity : AppCompatActivity() {
         binding.recyclerViewListTrail.apply {
             layoutManager = StaggeredGridLayoutManager(2, LinearLayout.VERTICAL)
             adapter = ListTrailAdapter(this@TrailActivity, list) { selectItemLanguage ->
-                val params = bundleOf("Language_selected" to selectItemLanguage.name)
-                navigateToMainActivity(params)
+                navigateToMainActivity(selectItemLanguage)
             }
         }
     }
 
-    private fun navigateToMainActivity(params: Bundle) {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent, params)
+    private fun navigateToMainActivity(serializable: Serializable) {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            putExtra("selected_language", serializable)
+        }
+        startActivity(intent)
         finish()
     }
 }

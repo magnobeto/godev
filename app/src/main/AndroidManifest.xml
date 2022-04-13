@@ -11,8 +11,7 @@
         android:theme="@style/Theme.GoDev">
         <activity
             android:name="com.uerj.godev.view.ui.activity.MainActivity"
-            android:exported="false"
-            android:label="@string/app_name" />
+            android:exported="false" />
         <activity
             android:name="com.uerj.godev.view.ui.activity.SplashScreenActivity"
             android:exported="true">
