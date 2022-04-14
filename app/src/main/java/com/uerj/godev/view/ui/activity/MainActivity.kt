@@ -10,7 +10,9 @@ import com.google.android.material.navigation.NavigationBarView
 import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityMainBinding
 import com.uerj.godev.model.Language
+import com.uerj.godev.view.ui.fragment.DashboardFragment
 import com.uerj.godev.view.ui.fragment.HomeFragment
+import com.uerj.godev.view.ui.fragment.NotificationsFragment
 import com.uerj.godev.viewmodel.MainActivityViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -35,13 +37,33 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.navigation_home -> startHome()
-                else -> false
+                R.id.navigation_dashboard -> startDash()
+                R.id.navigation_notifications -> startNotification()
+                else -> true
             }
         }
     }
 
     private fun startHome(): Boolean {
         val fragment = HomeFragment.newInstance()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, fragment)
+            .commit()
+
+        return true
+    }
+
+    private fun startDash(): Boolean {
+        val fragment = DashboardFragment.newInstance()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, fragment)
+            .commit()
+
+        return true
+    }
+
+    private fun startNotification(): Boolean {
+        val fragment = NotificationsFragment.newInstance()
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, fragment)
             .commit()

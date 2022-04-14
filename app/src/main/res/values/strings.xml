@@ -12,4 +12,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="listitem">ListItem</string>
     <string name="title_trail_chose">Escolha a sua trilha de conhecimento: </string>
+
+    // Kotlin
+    <string name="kotlin_home_title">Começando no Kotlin</string>
+    <string name="kotlin_home_description">Kotlin foi criada pela JetBrains com
+        o objetivo de ser uma linguagem de programação concisa e segura para o desenvolvimento web,
+        mobile e desktop, com um amplo conjunto de ferramentas e IDEs fáceis de utilizar.</string>
 </resources>
