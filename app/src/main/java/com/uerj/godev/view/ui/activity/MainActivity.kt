@@ -10,6 +10,7 @@ import com.google.android.material.navigation.NavigationBarView
 import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityMainBinding
 import com.uerj.godev.model.Language
+import com.uerj.godev.view.ui.constants.Constants
 import com.uerj.godev.view.ui.fragment.DashboardFragment
 import com.uerj.godev.view.ui.fragment.HomeFragment
 import com.uerj.godev.view.ui.fragment.NotificationsFragment
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val language: Language = intent.extras?.get("selected_language") as Language
+        val language: Language = intent.extras?.get(Constants.LANGUAGE_SELECTED) as Language
         viewModel.setLanguageSelected(language)
         observe()
         startHome()
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startHome(): Boolean {
-        val fragment = HomeFragment.newInstance()
+        val fragment = HomeFragment.newInstance(language = getLanguageSelected())
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, fragment)
             .commit()
@@ -77,5 +78,9 @@ class MainActivity : AppCompatActivity() {
                 title = optionSelected.name
             })
         }
+    }
+
+    private fun getLanguageSelected(): Language {
+        return viewModel.languageSelected.value ?: Language()
     }
 }
