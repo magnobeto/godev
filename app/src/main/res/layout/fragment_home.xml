@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-125dp"
+        android:layout_marginTop="-135dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
         app:lottie_rawRes="@raw/kotlin_animation" />
@@ -21,8 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="-30dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginTop="-30dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/orange"
         android:paddingStart="5dp"
@@ -46,8 +46,30 @@
         android:textSize="18sp" />
 
     <TextView
-        android:layout_marginTop="20dp"
-        android:text="Marcador do total do processo, design pendente"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/progress_on_trail_txt" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:progress="40"
+            android:scaleY="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="40%" />
+    </FrameLayout>
 </LinearLayout>

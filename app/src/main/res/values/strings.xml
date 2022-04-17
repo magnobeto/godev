@@ -12,6 +12,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="listitem">ListItem</string>
     <string name="title_trail_chose">Escolha a sua trilha de conhecimento: </string>
+    <string name="progress_on_trail_txt">Progresso na trilha: </string>
 
     // Kotlin
     <string name="kotlin_home_title">Começando no Kotlin</string>

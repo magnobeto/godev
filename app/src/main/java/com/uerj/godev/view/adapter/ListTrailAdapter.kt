@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.uerj.godev.R
 import com.uerj.godev.databinding.ListItemBinding
 import com.uerj.godev.model.Language
 
@@ -35,11 +36,10 @@ class ListTrailAdapter(
 
         fun bind(listItem: Language, clickListener: (Language) -> Unit) {
             binding.apply {
-                cardItem.setBackgroundColor(
-                    ContextCompat.getColor(
-                        context,
-                        listItem.backGroundColor
-                    )
+                cardItem.background = ContextCompat.getDrawable(context, R.drawable.rounded_corner)
+                cardItem.backgroundTintList = ContextCompat.getColorStateList(
+                    context,
+                    com.google.android.material.R.color.design_default_color_primary
                 )
                 nameItemTxt.text = listItem.name
                 imageButton.setBackgroundResource(listItem.icon)
