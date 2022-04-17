@@ -19,7 +19,14 @@ class TrailActivity : AppCompatActivity() {
         Language(Constants.ITEM_ALGORITHM),
         Language(Constants.ITEM_JAVASCRIPT, R.drawable.ic_icons8_javascript),
         Language(Constants.ITEM_PYTHON, R.drawable.ic_icons8_python),
-        Language(name = Constants.ITEM_KOTLIN, icon = R.drawable.ic_icons8_kotlin, backGroundColorText = R.color.orange)
+        Language(
+            name = Constants.ITEM_KOTLIN,
+            icon = R.drawable.ic_icons8_kotlin,
+            backGroundColorText = R.color.orange,
+            animationTop = R.raw.kotlin_animation,
+            textTitle = R.string.kotlin_home_title,
+            textDescription = R.string.kotlin_home_description
+        )
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +47,5 @@ class TrailActivity : AppCompatActivity() {
             putExtra(Constants.LANGUAGE_SELECTED, serializable)
         }
         startActivity(intent)
-        finish()
     }
 }

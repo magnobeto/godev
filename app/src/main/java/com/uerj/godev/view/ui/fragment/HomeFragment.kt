@@ -29,18 +29,19 @@ class HomeFragment(private val language: Language) : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        with(binding.titleHomeTxt) {
-            background =
+        with(binding) {
+            languageTitleAnimation.setAnimation(language.animationTop)
+            titleHomeTxt.setText(language.textTitle)
+            titleHomeTxt.background =
                 ContextCompat.getDrawable(requireContext(), R.drawable.rounded_corner)
-            backgroundTintList = ContextCompat.getColorStateList(
+            titleHomeTxt.backgroundTintList = ContextCompat.getColorStateList(
                 requireContext(),
                 language.backGroundColorText
             )
-        }
-        with(binding.descriptionHomeTxt) {
-            background =
+            descriptionHomeTxt.setText(language.textDescription)
+            descriptionHomeTxt.background =
                 ContextCompat.getDrawable(requireContext(), R.drawable.rounded_corner)
-            backgroundTintList = ContextCompat.getColorStateList(
+            descriptionHomeTxt.backgroundTintList = ContextCompat.getColorStateList(
                 requireContext(),
                 language.backGroundColorText
             )
