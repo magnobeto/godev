@@ -27,4 +27,27 @@
     <string name="kotlin_home_description">Kotlin foi criada pela JetBrains com
         o objetivo de ser uma linguagem de programação concisa e segura para o desenvolvimento web,
         mobile e desktop, com um amplo conjunto de ferramentas e IDEs fáceis de utilizar.</string>
+
+    // Algoritmos
+    <string name="algorithms_home_title">Aprendendo algoritmos</string>
+    <string name="algorithms_home_description">Um algoritmo é uma sequência de raciocínios,
+        instruções ou operações para alcançar um objetivo, sendo necessário que os passos sejam
+        finitos e operados sistematicamente. Um algoritmo, portanto, conta com a entrada (input) e
+        saída (output) de informações mediadas pelas instruções.</string>
+
+    // Python
+    <string name="pyhton_home_title">Começando no Python</string>
+    <string name="python_home_description">Python traz características que possibilitam escrever o
+        mesmo requisito em menos linhas de código que o necessário em outras linguagens de
+        programação e hoje, além de adotado na construção de soluções web, também está sendo muito
+        utilizado em aplicações que lidam com processamento de texto, machine learning e recomendação
+        de conteúdo, áreas que não param de crescer.</string>
+
+    // Javascript
+    <string name="javascript_home_title">Começando no Javascript</string>
+    <string name="javascript_home_description">O JavaScript é uma linguagem de programação de alto
+        nível voltada para o desenvolvimento web, criada originalmente para funcionar do lado do
+        usuário, ou seja, nos navegadores. Junto do HTML e do CSS, é uma das principais tecnologias
+        da web, permitindo a criação de páginas interativas com elementos dinâmicos e boa performance.</string>
+
 </resources>

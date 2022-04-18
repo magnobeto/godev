@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
-import androidx.core.view.marginTop
-import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
 import com.uerj.godev.R
 import com.uerj.godev.databinding.FragmentHomeBinding
@@ -43,8 +41,11 @@ class HomeFragment(private val language: Language) : Fragment() {
             layoutParams.height = language.animationHeight
             layoutParams.width = language.animationWidth
             layoutParams.topMargin = language.animationMarginTop
+            layoutParams.rightMargin = language.animationMarginRight
+            layoutParams.leftMargin = language.animationMarginLeft
             layoutParams.bottomMargin = language.animationMarginBotom
             languageTitleAnimation.layoutParams = layoutParams
+            languageTitleAnimation.repeatCount = language.animationAutoLoop
             titleHomeTxt.setText(language.textTitle)
             titleHomeTxt.background =
                 ContextCompat.getDrawable(requireContext(), R.drawable.rounded_corner)
