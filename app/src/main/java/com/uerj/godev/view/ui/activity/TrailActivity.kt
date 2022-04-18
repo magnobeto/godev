@@ -9,25 +9,14 @@ import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityTrailBinding
 import com.uerj.godev.model.Language
 import com.uerj.godev.view.adapter.ListTrailAdapter
-import com.uerj.godev.view.ui.constants.Constants
+import com.uerj.godev.view.ui.util.Constants
+import com.uerj.godev.view.ui.util.ListOfLanguage
 import java.io.Serializable
 
 class TrailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityTrailBinding
-    private val list = listOf(
-        Language(Constants.ITEM_ALGORITHM),
-        Language(Constants.ITEM_JAVASCRIPT, R.drawable.ic_icons8_javascript),
-        Language(Constants.ITEM_PYTHON, R.drawable.ic_icons8_python),
-        Language(
-            name = Constants.ITEM_KOTLIN,
-            icon = R.drawable.ic_icons8_kotlin,
-            backGroundColorText = R.color.orange,
-            animationTop = R.raw.kotlin_animation,
-            textTitle = R.string.kotlin_home_title,
-            textDescription = R.string.kotlin_home_description
-        )
-    )
+    private val list = ListOfLanguage.list
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

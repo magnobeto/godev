@@ -2,15 +2,12 @@ package com.uerj.godev.view.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.navigation.NavigationBarView
 import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityMainBinding
 import com.uerj.godev.model.Language
-import com.uerj.godev.view.ui.constants.Constants
+import com.uerj.godev.view.ui.util.Constants
 import com.uerj.godev.view.ui.fragment.DashboardFragment
 import com.uerj.godev.view.ui.fragment.HomeFragment
 import com.uerj.godev.view.ui.fragment.NotificationsFragment
