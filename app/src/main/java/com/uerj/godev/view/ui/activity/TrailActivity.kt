@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityTrailBinding
-import com.uerj.godev.model.Language
 import com.uerj.godev.view.adapter.ListTrailAdapter
-import com.uerj.godev.view.ui.util.Constants
-import com.uerj.godev.view.ui.util.ListOfLanguage
+import com.uerj.godev.view.util.Constants
+import com.uerj.godev.view.util.ListOfLanguage
 import java.io.Serializable
 
 class TrailActivity : AppCompatActivity() {

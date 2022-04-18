@@ -1,8 +1,7 @@
 package com.uerj.godev.model
 
-import com.airbnb.lottie.LottieDrawable
 import com.uerj.godev.R
-import com.uerj.godev.view.ui.util.Constants
+import com.uerj.godev.view.util.Constants
 import java.io.Serializable
 
 data class Language(

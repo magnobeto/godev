@@ -1,4 +1,4 @@
-package com.uerj.godev.view.ui.util
+package com.uerj.godev.view.util
 
 import com.airbnb.lottie.LottieDrawable
 import com.uerj.godev.R

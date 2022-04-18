@@ -1,4 +1,4 @@
-package com.uerj.godev.view.ui.util
+package com.uerj.godev.view.util
 
 import android.view.ViewGroup
 

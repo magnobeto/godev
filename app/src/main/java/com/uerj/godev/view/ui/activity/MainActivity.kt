@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.uerj.godev.R
 import com.uerj.godev.databinding.ActivityMainBinding
 import com.uerj.godev.model.Language
-import com.uerj.godev.view.ui.util.Constants
+import com.uerj.godev.view.util.Constants
 import com.uerj.godev.view.ui.fragment.DashboardFragment
 import com.uerj.godev.view.ui.fragment.HomeFragment
 import com.uerj.godev.view.ui.fragment.NotificationsFragment
