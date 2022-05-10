@@ -4,14 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.uerj.godev.R
 import com.uerj.godev.databinding.FragmentDashboardBinding
 import com.uerj.godev.view.adapter.ListLessonAdapter
-import com.uerj.godev.view.adapter.ListTrailAdapter
 
 class DashboardFragment : Fragment() {
 
@@ -33,8 +32,17 @@ class DashboardFragment : Fragment() {
         binding = FragmentDashboardBinding.inflate(inflater, container, false)
         binding.recyclerViewListLesson.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = ListLessonAdapter()
+            adapter = ListLessonAdapter(::startLessonFragment)
         }
         return binding.root
+    }
+
+    private fun startLessonFragment() {
+        val fragment = LessonFragment.newInstance()
+        parentFragmentManager
+            .beginTransaction()
+            .addToBackStack(null)
+            .replace(R.id.container, fragment)
+            .commit()
     }
 }

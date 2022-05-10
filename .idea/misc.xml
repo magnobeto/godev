@@ -17,9 +17,11 @@
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/activity_trail.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/fragment_dashboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/fragment_lesson.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/fragment_lesson_list.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/list_item.xml" value="0.264" />
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/list_lesson_item.xml" value="0.264" />
+        <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/layout/list_trail_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rmcampos/AndroidStudioProjects/godev/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11302083333333333" />
       </map>
     </option>

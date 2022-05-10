@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.uerj.godev.databinding.ListLessonItemBinding
 
-class ListLessonAdapter : RecyclerView.Adapter<ListLessonAdapter.ListLessonViewHolder>() {
+class ListLessonAdapter(
+    private val onClickLesson: () -> Unit
+) : RecyclerView.Adapter<ListLessonAdapter.ListLessonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListLessonViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -14,6 +16,7 @@ class ListLessonAdapter : RecyclerView.Adapter<ListLessonAdapter.ListLessonViewH
     }
 
     override fun onBindViewHolder(holder: ListLessonViewHolder, position: Int) {
+        holder.bind()
     }
 
     override fun getItemCount(): Int {
@@ -23,5 +26,10 @@ class ListLessonAdapter : RecyclerView.Adapter<ListLessonAdapter.ListLessonViewH
     inner class ListLessonViewHolder(val binding: ListLessonItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        fun bind() {
+            binding.cardLessonItem.setOnClickListener {
+                onClickLesson.invoke()
+            }
+        }
     }
 }
